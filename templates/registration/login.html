@@ -1,0 +1,16 @@
+{% block content %}
+	<div class="login">
+		<div id="container">
+			<form action="/login/" method="POST">
+                {% csrf_token %}
+				<div class="form-row">
+					{{form.as_p}}	
+				</div>
+				<input type="submit" value="login" />
+			</form>
+
+			<p><a href="{% url password_reset %}">forgot password?</a></p>
+			<a href="/register/">register</a><br/>
+		</div>
+	</div>
+{% endblock %}
