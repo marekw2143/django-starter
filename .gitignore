@@ -1,0 +1,5 @@
+*.pyc
+*.swp
+*.py.*
+_proto3
+db_file_sqlite3
