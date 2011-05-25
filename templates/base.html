@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head>
+	<meta name="keywords" content="django bootstrap django-starter"/>
+	<meta name="description" content="simple template of django application"/>
+	<meta name="robots" content="index,follow"/>
+
+	<title>DOMAIN_NAME</title>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+
+	{% block javascript %}
+	{% endblock %}
+
+</head>
+
+<body>
+    <div>
+        <h3>Menu</h3>
+    </div>
+    <div>
+        logged user: <strong>{{request.user}}</strong>,
+        <a href="/logout/">logout</a>
+    </div>
+	<div>
+		{% block content %}
+		{% endblock %}
+	</div>
+</div>
+</body>
+</html>
