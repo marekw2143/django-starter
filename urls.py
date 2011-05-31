@@ -6,6 +6,8 @@ from django.conf.urls.defaults import patterns, include, url
 
 urlpatterns = patterns('',
 	(r'^', include('marekw2143_registration.urls')),
+    url(r'^captcha/', include('captcha.urls')), #django-simple-captcha support
+
     # Examples:
     # url(r'^$', 'statser.views.home', name='home'),
     # url(r'^statser/', include('statser.foo.urls')),
