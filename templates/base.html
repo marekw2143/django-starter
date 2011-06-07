@@ -5,7 +5,7 @@
 	<meta name="description" content="simple template of django application"/>
 	<meta name="robots" content="index,follow"/>
 
-	<title>DOMAIN_NAME</title>
+	<title>{{current_site}}</title>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 
@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div>
+        <center><h1>{{ current_site }}</h1></center>
+    </div>
     <div>
         <h3>Menu</h3>
     </div>
