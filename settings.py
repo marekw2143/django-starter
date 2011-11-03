@@ -121,7 +121,6 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'urls'
 
-from registration_defaults.settings import REGISTRATION_TEMPLATE_DIR
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates'),
     REGISTRATION_TEMPLATE_DIR,
